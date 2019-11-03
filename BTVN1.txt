@@ -1,2 +1,7 @@
 ...Đỗ Văn Bảo
 Tìm hiểu mô hình MVC
+*Thành phần 
++Controller:Nhận điều hướng các yêu cầu từ người dùng và gọi đúng những phương thức xử lý chúng
++Model:chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối tượng mô tả dữ liệu như các Class, hàm xử lý…
++View:hiển thị thông tin, tương tác với người dùng, nơi chứa tất cả các đối tượng GUI như textbox, images… 
+Hiểu một cách đơn giản, nó là tập hợp các form hoặc các file HTML.
