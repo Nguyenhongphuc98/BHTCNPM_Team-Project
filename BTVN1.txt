@@ -1,4 +1,6 @@
 
+-----------------------------------------------------------------------------------------------------------------------------
+
  							Đỗ Văn Bảo
 
 Tìm hiểu mô hình MVC
@@ -15,7 +17,8 @@ Khi xử lý xong yêu cầu, tất cả kết quả trả về được đẩy 
 Tại View sẽ đưa ra mã HTML thành giao diện và trả HTML về hiển thị trên trình duyệt.
 *Ưu điểm 
 Cho thấy sự chuyên nghiệp trong lập trình và phân tích đối tượng
-(vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn, đơn giản hơn và dễ nâng cấp, bảo trì hơn)
+(vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn,
+ đơn giản hơn và dễ nâng cấp, bảo trì hơn)
 *Nhược điểm  
 Là mô hình làm việc rất bài bản nên với những ứng dụng nhỏ, sử dụng MVC rất tốn nhiều thời gian và gây ra nhiều phức tạp
 
