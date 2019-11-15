@@ -182,7 +182,7 @@ dụng MVC cần phải thành thạo trong nhiều công nghệ.
 
    Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người
    dùng, phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này
-   cho phép tái sử dụng code và phát triển song song.
+   cho phép tái sử dụng code và phát triển song song
 	
      
 
