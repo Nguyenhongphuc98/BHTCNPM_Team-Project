@@ -1,4 +1,4 @@
-
+﻿
 -----------------------------------------------------------------------------------------------------------------------------
 
  							Đỗ Văn Bảo
@@ -174,3 +174,29 @@ nhóm lại với nhau.
 sự độc lập thông qua những mảng đã được cấu trúc sẵn dẫn đến việc không tăng lợi nhuận trong MVC.
 3. Dựa trên những biểu đồ học tập - việc yêu cầu phải có kiến thức trong nhiều công ngh trở thành việc hiển nhiên. Những nhà phát triển sử
 dụng MVC cần phải thành thạo trong nhiều công nghệ.
+------------------------------------------------------------------------------------------------------------------------------
+                                                       Vũ Phương Thoa
+
+
+      
+
+   Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người
+   dùng, phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này
+   cho phép tái sử dụng code và phát triển song song.
+	
+     
+
+   + Model (mô hình): Đây là thành phần trung tâm của mô hình, chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối
+   tượng mô tả dữ liệu class, hàm,… Trực tiếp quản lý dữ liệu, logic và quy tắc của ứng dụng.
+   . View (khung nhìn): Đây là thành phần đại diện cho thông tin như biểu đồ, đồ thị, sơ đồ, bảng, văn bản, hình ảnh,… có thể hiển thị
+   nhiều chế độ xem của cùng một thông tin. Đảm bảo nhiệm vụ hiển thị dữ liệu, giúp người dùng tương tác với hệ thống.
+   + Controller (bộ điều khiển): Nhận vào input và chuyển đổi thành các lệnh cho model hoặc view.
+
+      
+
+   . Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
+   . View là hiện thị của model theo một định dạng xác định
+   . Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt
+   input có 
+   chọn lọc và sau đó truyền input vào model.
+
