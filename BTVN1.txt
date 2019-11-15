@@ -198,5 +198,5 @@ dụng MVC cần phải thành thạo trong nhiều công nghệ.
    . View là hiện thị của model theo một định dạng xác định
    . Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt
    input có 
-   chọn lọc và sau đó truyền (input vào model).
+   chọn lọc và sau đó truyền input vào model
 
