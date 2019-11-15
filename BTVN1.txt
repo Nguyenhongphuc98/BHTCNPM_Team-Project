@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-...Đỗ Văn Bảo
+
+ 							Đỗ Văn Bảo
+
 Tìm hiểu mô hình MVC
 *Ngôn ngữ thường xuyên sử dụng Java, PHP hay ASP.Net...
 *Thành phần 
@@ -17,9 +18,7 @@ Cho thấy sự chuyên nghiệp trong lập trình và phân tích đối tư�
 (vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn, đơn giản hơn và dễ nâng cấp, bảo trì hơn)
 *Nhược điểm  
 Là mô hình làm việc rất bài bản nên với những ứng dụng nhỏ, sử dụng MVC rất tốn nhiều thời gian và gây ra nhiều phức tạp
-=======
-﻿...Đỗ Văn Bảo
-Tìm hiểu mô hình MVC
+
 ------------------------------------------------------------------------------------
 				Đoàn Ngọc Lãm
 	-Mô hình MVC:
