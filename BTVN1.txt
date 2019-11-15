@@ -1,4 +1,4 @@
-...Đỗ Văn Bảo
+ 							Đỗ Văn Bảo
 Tìm hiểu mô hình MVC
 *Ngôn ngữ thường xuyên sử dụng Java, PHP hay ASP.Net...
 *Thành phần 
