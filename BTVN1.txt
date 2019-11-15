@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ...Đỗ Văn Bảo
 Tìm hiểu mô hình MVC
 *Ngôn ngữ thường xuyên sử dụng Java, PHP hay ASP.Net...
@@ -16,3 +17,148 @@ Cho thấy sự chuyên nghiệp trong lập trình và phân tích đối tư�
 (vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn, đơn giản hơn và dễ nâng cấp, bảo trì hơn)
 *Nhược điểm  
 Là mô hình làm việc rất bài bản nên với những ứng dụng nhỏ, sử dụng MVC rất tốn nhiều thời gian và gây ra nhiều phức tạp
+=======
+﻿...Đỗ Văn Bảo
+Tìm hiểu mô hình MVC
+------------------------------------------------------------------------------------
+				Đoàn Ngọc Lãm
+	-Mô hình MVC:
+   MVC là từ viết tắt của 'Model View Controller'. Nó đại diện cho các nhà phát triển kiến ​​trúc áp 
+dụng khi xây dựng các ứng dụng. Với kiến ​​trúc MVC, chúng ta xem xét cấu trúc ứng dụng liên quan đến 
+cách luồng dữ liệu của ứng dụng của chúng ta hoạt động như thế nào.
+
+	-Các thành phần trong mô hình MVC:
+   Mô hình MVC được chia làm 3 lớp xử lý gồm Model – View – Controller :
+   +Model : là nơi chứa những nghiệp vụ tương tác với dữ liệu hoặc hệ quản trị cơ sở dữ liệu 
+(mysql, mssql… ); nó sẽ bao gồm các class/function xử lý nhiều nghiệp vụ như kết nối database,
+truy vấn dữ liệu, thêm – xóa – sửa dữ liệu…
+   +View : là nới chứa những giao diện như một nút bấm, khung nhập, menu, hình ảnh… nó đảm nhiệm
+ nhiệm vụ hiển thị dữ liệu và giúp người dùng tương tác với hệ thống.
+   +Controller : là nới tiếp nhận những yêu cầu xử lý được gửi từ người dùng, nó sẽ gồm những class/
+function xử lý nhiều nghiệp vụ logic giúp lấy đúng dữ liệu thông tin cần thiết nhờ các nghiệp vụ 
+lớp Model cung cấp và hiển thị dữ liệu đó ra cho người dùng nhờ lớp View.
+
+	-Sự tương tác giữa các thành phần
+   +Controller tương tác với qua lại với View
+   +Controller tương tác qua lại với Model
+   +Model và View không có sự tương tác với nhau mà nó tương tác với nhau thông qua Controller.
+
+	-Một số mô hình hoạt động theo mô hình MVC
+	browser <----1,2----> route 
+	route ----3-----> controller <----4,8---> model <---6,7---> database
+	browser <---11----- controller <----10,9---->view
+
+   +Tình huống 1: Người dùng chỉ gửi yêu cầu chuyển từ trang hiện tại sang một trang khác của web không 
+có yêu cầu về dữ liệu.
+
+    Nếu như người lập trình thực hiện việc redirect ở Controller thì lúc này luồng hoạt động là: 1 -> 3 -> 11. 
+Request được gửi từ Browser (trình duyệt) đến Route (nơi định tuyến hay phân định các request sẽ được xử lý ở 
+đâu là trực tiếp tại Route hay là tại Controller nào đó).
+    Nếu người lập trình để việc redirect trang ở trực tiếp tại Route thì luồng hoạt động của nó là: 1 -> 2
+ yêu cầu chuyển trang sẽ được xử lý ngay tại Route mà không cần gọi đến Controller.	
+    +Tình huống 2: Người dùng gửi 1 request redirect về 1 trang khác của web có trả về dữ liệu (ví dụ như 
+xem danh sách các Tour đã đặt).
+
+     Luồng hoạt động của nó là: 1 -> 3 -> 4 -> 6 -> 7 -> 8 -> 10 -> 9 > 11. Sau khi request gửi về Route được 
+Route chuyển về xử lý tại Controller, lúc này các yêu cầu liên quan đến dữ liệu sẽ được xử lý và Controller 
+sẽ có sự tương tác với Model để lấy dữ liệu, Controller sẽ sử dụng các lớp/hàm trong Model cần thiết để lấy 
+ra những dữ liệu chính xác. Model tương tác với Database để lấy dữ liệu, dữ liệu trả về được gửi về Model từ 
+Model gửi lại về Controller, Controller gọi đến View phù hợp với request kèm theo dữ liệu cho View, View sẽ 
+lắp dữ liệu tương ứng vào HTML và gửi lại một HTML cho Controller sau khi thực hiện xong nhiệm vụ của mình. 
+Hoàn tất các công đoạn trên Controller sẽ trả kết quả về Browser.
+    +Tình huống 3:Người dùng chỉ yêu cầu dữ liệu nhưng không chuyển trang
+
+Luồng hoạt động của nó là: 1 -> 3 -> 4 -> 6 -> 7 -> 8 -> 11. Thứ tự xử lý tương tự ở kịch bản 2 nhưng đến khi 
+Controller nhận được dữ liệu trả về thì không gọi đến View mà trả respone lại cho trình duyệt thông qua API, 
+dữ liệu trả về thường sẽ là dạng JSON.
+    
+    ví dụ:
+  Giả sử bạn đang xem một bài tus trên website freetuts.net có URL là 
+https://freetuts.net/rewrite-url-trong-codeigniter-344.html thì hệ thống MVC sẽ xử lý như sau:
+   Bước 1: Dựa vào yêu cầu của bạn là xem bài viết có id=344 nên controller sẽ gọi tới một hàm 
+lấy dữ liệu theo id trong model
+   Bước 2: Sau khi có dữ liệu controller sẽ gửi qua View, lúc này view có nhiệm vụ xử lý dữ liệu 
+và convert thành nhữn đoạn mã HTML
+   Bước 3: Sau khi view kết thúc thì controller sẽ gửi trả nội dung HTML của view về cho client 
+nên bạn sẽ xem được nội dung của bài tus có id=344
+
+	-Ưu điểm MVC
+    +Trình tự xử lý rất rõ ràng
+    +Mô hình MVC quy hoạch các class/function vào các thành phần riêng biêt Controller - Model - View, việc đó 
+làm cho quá trình phát triển - quản lý - vận hành - bảo trì web diễn ra thuận lợi hơn, tạo ra được các chức năng 
+chuyên biệt hoá đồng thời kiểm soát được luồng xử lý.
+    +Tạo mô hình chuẩn cho dự án, khi người có chuyên môn ngoài dự án tiếp cận với dự án dễ dàng hơn.
+    +Mô hình đơn giản, dễ hiểu, xử lý những nghiệp vụ đơn giản, và dễ dàng triển khai với các dự án nhỏ.
+	-Nhược điểm mô hình MVC
+    +Đối với các dự án có tính phức tạp cao thì mô hình MVC trở nên không khả dụng
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+........................................... Huỳnh Văn Pháp - 19521987.......................
+                                              TÌM HIỂU MÔ HÌNH MVC
+Mô hình MVC (Model – View – Controller) là một kiến trúc phần mềm hay mô hình thiết kế được sử dụng trong kỹ thuật phần mềm. 
+Nó giúp cho các developer tách ứng dụng của họ ra 3 thành phần khác nhau Model, View và Controller. Mỗi thành phần có một nhiệm vụ riêng biệt và độc lập với các thành phần khác.
+Model : Đây là thành phần chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối tượng mô tả dữ liệu như các Class, hàm xử lý…
+View : Đảm nhận việc hiển thị thông tin, tương tác với người dùng, nơi chứa tất cả các đối tượng GUI như textbox, images…Hiểu một cách đơn giản, nó là tập hợp các form hoặc các file HTML.
+Controller : Giữ nhiệm vụ nhận điều hướng các yêu cầu từ người dùng và gọi đúng những phương thức xử lý chúng… Chẳng hạn thành phần này sẽ nhận request từ url và form để thao tác trực tiếp với Model.
+
+– User tương tác với View, bằng cách click vào button, user gửi yêu cầu đi.
+
+– Controller nhận và điều hướng chúng đến đúng phương thức xử lý ở Model.
+
+– Model nhận thông tin và thực thi các yêu cầu.
+
+– Khi Model hoàn tất việc xử lý, View sẽ nhận kết quả từ Model và hiển thị lại cho người dùng.
+1. Ưu điểm: Thể hiện tính chuyên nghiệp trong lập trình, phân tích thiết kế. Do được chia thành các thành phần độc lập nên giúp phát triển ứng dụng nhanh, đơn giản, dễ nâng cấp, bảo trì..
+2. Nhược điểm: Đối với dự án nhỏ việc áp dụng mô hình MC gây cồng kềnh, tốn thời gian trong quá trình phát triển. Tốn thời gian trung chuyển dữ liệu của các thành phần.
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+								     NGÔ DƯƠNG KHA
+
+	- MVC là gì?
+
+     Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người dùng, 
+     phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này cho phép 
+     tái sử dụng code và phát triển song song.
+	
+	- Các thành phần trong MVC
+
+     + Model (mô hình): Đây là thành phần trung tâm của mô hình, chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối tượng
+     mô tả dữ liệu class, hàm,… Trực tiếp quản lý dữ liệu, logic và quy tắc của ứng dụng.
+     + View (khung nhìn): Đây là thành phần đại diện cho thông tin như biểu đồ, đồ thị, sơ đồ, bảng, văn bản, hình ảnh,… có thể hiển thị nhiều chế
+     độ xem của cùng một thông tin. Đảm bảo nhiệm vụ hiển thị dữ liệu, giúp người dùng tương tác với hệ thống.
+     + Controller (bộ điều khiển): Nhận vào input và chuyển đổi thành các lệnh cho model hoặc view.
+
+	- Ngoài việc phân chia thành ba thành phần riêng biệt, MVC còn là sự tương tác giữa các thành phần
+
+     + Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
+     + View là hiện thị của model theo một định dạng xác định
+     + Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt input có 
+     chọn lọc và sau đó truyền input vào model.
+
+	- Ưu và nhược của MVC
+     + Ưu điểm: 
+
+   1. Phát triển đồng thời – Nhiều nhà phát triển có thể làm việc đồng thời trên model, views, controller.
+   2. Độ gắn kết cao – MVC cho phép nhóm logic các hành động liên quan trên controller với nhau. View cho bởi một mô hình cụ thể cũng có thể nhóm 
+   lại với nhau.
+   3. Dễ sửa đổi – Do phân tách trách nhiệm, việc phát triển hoặc sửa đổi trong tương lai sẽ dễ dàng hơn.
+   4. Nhiều chế độ xem cho một mô hình.
+
+     + Nhược điểm:
+
+   1. Đối với các dự án có tính phức tạp cao thì mô hình MVC trở nên không khả dụng.
+   2. Thiếu sự gia tăng về lợi nhuận – giao diện người dùng của ứng dụng đã được chia thành các mảng, và việc thi hành sử dụng lại code cũ và sự độc 
+   lập thông qua những mảng đã được cấu trúc sẵn dẫn đến việc không tăng lợi nhuận trong MVC.
+   3. Dựa trên những biểu đồ học tập - việc yêu cầu phải có kiến thức trong nhiều công ngh trở thành việc hiển nhiên. Những nhà phát triển sử dụng 
+   MVC cần phải thành thạo trong nhiều công nghệ.
+>>>>>>> a320e685b2ca44c8a935561093dcfd87b52b1514
