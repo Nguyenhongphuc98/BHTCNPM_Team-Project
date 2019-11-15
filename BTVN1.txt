@@ -1,20 +1,27 @@
 -----------------------------------------------------------------------------------------------------------------------------
  							Đỗ Văn Bảo
-Tìm hiểu mô hình MVC
+						    Tìm hiểu mô hình MVC
 *Ngôn ngữ thường xuyên sử dụng Java, PHP hay ASP.Net...
+
 *Thành phần 
 +Controller:Nhận điều hướng các yêu cầu từ người dùng và gọi đúng những phương thức xử lý chúng
+
 +Model:chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối tượng mô tả dữ liệu như các Class, hàm xử lý…
+
 +View:hiển thị thông tin, tương tác với người dùng, nơi chứa tất cả các đối tượng GUI như textbox, images… 
 Hiểu một cách đơn giản, nó là tập hợp các form hoặc các file HTML.
+
 *Luồng đi
 Khi có một yêu cầu từ phía máy client gửi đến server, bộ phận Controller sẽ tiếp nhận và có nhiệm vụ xử lý yêu cầu đó. 
 (Ngoài ra, khi cần thiết, nó sẽ gọi đến thành phần Model, là bộ phận làm việc với Database.)
+
 Khi xử lý xong yêu cầu, tất cả kết quả trả về được đẩy đến View
+
 Tại View sẽ đưa ra mã HTML thành giao diện và trả HTML về hiển thị trên trình duyệt.
+
 *Ưu điểm 
 Cho thấy sự chuyên nghiệp trong lập trình và phân tích đối tượng
-(vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn,
- đơn giản hơn và dễ nâng cấp, bảo trì hơn)
+(vì được chia các thành phần riêng biệt nên hoạt động độc lập tách biệt giúp phát triển ứng dụng nhanh hơn, đơn giản hơn và dễ nâng cấp, bảo trì hơn)
+
 *Nhược điểm  
 Là mô hình làm việc rất bài bản nên với những ứng dụng nhỏ, sử dụng MVC rất tốn nhiều thời gian và gây ra nhiều phức tạp
