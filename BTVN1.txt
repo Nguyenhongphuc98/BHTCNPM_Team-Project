@@ -132,44 +132,45 @@ Controller : Giữ nhiệm vụ nhận điều hướng các yêu cầu từ ng�
 
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------
-								     NGÔ DƯƠNG KHA
+------------------------------------------------------------------------------------------------------------------------------------------
+							      NGÔ DƯƠNG KHA
 
-	- MVC là gì?
+      - MVC là gì?
 
-     Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người dùng, 
-     phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này cho phép 
-     tái sử dụng code và phát triển song song.
+   Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người
+   dùng, phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này
+   cho phép tái sử dụng code và phát triển song song.
 	
-	- Các thành phần trong MVC
+      - Các thành phần trong MVC
 
-     + Model (mô hình): Đây là thành phần trung tâm của mô hình, chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối tượng
-     mô tả dữ liệu class, hàm,… Trực tiếp quản lý dữ liệu, logic và quy tắc của ứng dụng.
-     + View (khung nhìn): Đây là thành phần đại diện cho thông tin như biểu đồ, đồ thị, sơ đồ, bảng, văn bản, hình ảnh,… có thể hiển thị nhiều chế
-     độ xem của cùng một thông tin. Đảm bảo nhiệm vụ hiển thị dữ liệu, giúp người dùng tương tác với hệ thống.
-     + Controller (bộ điều khiển): Nhận vào input và chuyển đổi thành các lệnh cho model hoặc view.
+   + Model (mô hình): Đây là thành phần trung tâm của mô hình, chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối
+   tượng mô tả dữ liệu class, hàm,… Trực tiếp quản lý dữ liệu, logic và quy tắc của ứng dụng.
+   + View (khung nhìn): Đây là thành phần đại diện cho thông tin như biểu đồ, đồ thị, sơ đồ, bảng, văn bản, hình ảnh,… có thể hiển thị
+   nhiều chế độ xem của cùng một thông tin. Đảm bảo nhiệm vụ hiển thị dữ liệu, giúp người dùng tương tác với hệ thống.
+   + Controller (bộ điều khiển): Nhận vào input và chuyển đổi thành các lệnh cho model hoặc view.
 
-	- Ngoài việc phân chia thành ba thành phần riêng biệt, MVC còn là sự tương tác giữa các thành phần
+      - Ngoài việc phân chia thành ba thành phần riêng biệt, MVC còn là sự tương tác giữa các thành phần
 
-     + Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
-     + View là hiện thị của model theo một định dạng xác định
-     + Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt input có 
-     chọn lọc và sau đó truyền input vào model.
+   + Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
+   + View là hiện thị của model theo một định dạng xác định
+   + Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt
+   input có 
+   chọn lọc và sau đó truyền input vào model.
 
-	- Ưu và nhược của MVC
-     + Ưu điểm: 
+      - Ưu và nhược của MVC
 
-   1. Phát triển đồng thời – Nhiều nhà phát triển có thể làm việc đồng thời trên model, views, controller.
-   2. Độ gắn kết cao – MVC cho phép nhóm logic các hành động liên quan trên controller với nhau. View cho bởi một mô hình cụ thể cũng có thể nhóm 
-   lại với nhau.
-   3. Dễ sửa đổi – Do phân tách trách nhiệm, việc phát triển hoặc sửa đổi trong tương lai sẽ dễ dàng hơn.
-   4. Nhiều chế độ xem cho một mô hình.
+   + Ưu điểm: 
 
-     + Nhược điểm:
+1. Phát triển đồng thời – Nhiều nhà phát triển có thể làm việc đồng thời trên model, views, controller.
+2. Độ gắn kết cao – MVC cho phép nhóm logic các hành động liên quan trên controller với nhau. View cho bởi một mô hình cụ thể cũng có thể
+nhóm lại với nhau.
+3. Dễ sửa đổi – Do phân tách trách nhiệm, việc phát triển hoặc sửa đổi trong tương lai sẽ dễ dàng hơn.
+4. Nhiều chế độ xem cho một mô hình.
 
-   1. Đối với các dự án có tính phức tạp cao thì mô hình MVC trở nên không khả dụng.
-   2. Thiếu sự gia tăng về lợi nhuận – giao diện người dùng của ứng dụng đã được chia thành các mảng, và việc thi hành sử dụng lại code cũ và sự độc 
-   lập thông qua những mảng đã được cấu trúc sẵn dẫn đến việc không tăng lợi nhuận trong MVC.
-   3. Dựa trên những biểu đồ học tập - việc yêu cầu phải có kiến thức trong nhiều công ngh trở thành việc hiển nhiên. Những nhà phát triển sử dụng 
-   MVC cần phải thành thạo trong nhiều công nghệ.
->>>>>>> a320e685b2ca44c8a935561093dcfd87b52b1514
+   + Nhược điểm:
+
+1. Đối với các dự án có tính phức tạp cao thì mô hình MVC trở nên không khả dụng.
+2. Thiếu sự gia tăng về lợi nhuận – giao diện người dùng của ứng dụng đã được chia thành các mảng, và việc thi hành sử dụng lại code cũ và
+sự độc lập thông qua những mảng đã được cấu trúc sẵn dẫn đến việc không tăng lợi nhuận trong MVC.
+3. Dựa trên những biểu đồ học tập - việc yêu cầu phải có kiến thức trong nhiều công ngh trở thành việc hiển nhiên. Những nhà phát triển sử
+dụng MVC cần phải thành thạo trong nhiều công nghệ.
