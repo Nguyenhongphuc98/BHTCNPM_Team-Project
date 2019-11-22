@@ -1,2 +1,35 @@
 Đoàn Ngọc Lãm
 tìm hiểu HTML
+Cấu trúc của một tài liệu html
+
+Một tài liệu html gồm 3 phần cơ bản:
+
+	Phần html: Mọi tài liệu html phải bắt đầu bằng thẻ mở html <html> và kết thúc bằng thẻ đóng html </html>
+<html> …. </html>
+
+     Thẻ html báo cho trình duyệt biết nội dung giữa hai thẻ này là một tài liệu html
+
+	Phần tiêu đề: Phần tiêu đề bắt đầu bằng thẻ <head> và kết thúc bởi thẻ </head>. Phần này chứa tiêu đề mà được 
+hiển thị trên thanh điều hướng của trang Web. Tiêu đề nằm trong thẻ title, bắt đầu bằng thẻ <title> và kết thúc là thẻ </title>.
+Tiêu đề là phần khá quan trọng. Khi người dùng tìm kiếm thông tin, tiêu đề của trang Web cung cấp từ khóa chính yếu 
+cho việc tìm kiếm.
+
+	Phần thân: phần này nằm sau phần tiêu đề. Phầ̀n thân bao gồm văn bản, hình ảnh và các liên kết mà bạn muốn 
+hiển thị trên trang web của mình. Phần thân bắt đầu bằng thẻ <body> và kết thúc bằng thẻ </body>
+	ví dụ:
+<html>
+    <head>
+        <title>Welcome to the world of html</title>
+    </head>
+    <body>
+        <P>This is going to be real fun</P>
+    </body>
+</html>
+Thuộc Tính Thẻ
+
+ Là những đặc tính, tính chất mang theo để trình duyệt định dạng và hiển thị thẻ đó.
+ Mỗi thẻ có thể có 1 hoặc nhiều thuộc tính
+ Mỗi thuộc tính có tên thuộc tính và giá trị của thuộc tính, giá trị được đặt trong dấu ""
+ Cú pháp:
+
+<tên_thẻ thuộc_tính_1="giá_trị_thuộc_tính_1" thuộc_tính_2="giá_trị_thuộc_tính_2" ... /> 
