@@ -33,3 +33,32 @@ Thuộc Tính Thẻ
  Cú pháp:
 
 <tên_thẻ thuộc_tính_1="giá_trị_thuộc_tính_1" thuộc_tính_2="giá_trị_thuộc_tính_2" ... /> 
+______________________
+
+Nguyễn Yến Nhi
+HTML (HyperText Markup Language)
+
+Không giống như ngôn ngữ lập trình hoặc ngôn ngữ lập trình sử dụng tập lệnh để thực hiện các chức năng, ngôn ngữ đánh dấu sử dụng thẻ để xác định nội dung.
+Ví dụ:
+<p> Happy Birthday Mr. Hong Phuc </p>
+
+Dùng HTML để viết cấu trúc web: Khả năng viết mã bằng HTML là điều cần thiết cho bất kì chuyên gia web nào. Có được kĩ năng này sẽ là điểm khởi đầu cho bất kì ai đang học cách tạo nội dung cho web.
+
+Thẻ <html>:
+Mặc dù trong các năm qua có nhiều phiên bản khác nhau đã được phát hành nhưng những điều cơ bản về HTML vẫn giống nhau.
+Cấu trúc của một tài liệu HTML có thể so sánh với cấu trúc của một chiếc bánh sandwich. Vì một chiếc bánh sandwich có 2 lát bánh mì, tài liệu HTML cũng có các thẻ HTML mở và đóng. Các thẻ này giống như 2 lát bánh mì trong chiếc bánh sandwich, bao quanh mọi thứ khác.
+
+Thẻ <head>:
+Ngay sau thẻ HTML đang mở, ta sẽ tìm thấy phần đầu của tài liệu, được xác định bằng cách mở và đóng thẻ head.
+Phần đầu của tệp HTML chứa tất cả các yếu tố không trực quan giúp trang hoạt động.
+
+Thẻ <body>:
+Tất cả các yếu tố cấu trúc hình ảnh được chứa trong thẻ body.
+Tiêu đề, đoạn văn, danh sách, trích dẫn, hình ảnh và liên kết chỉ là một vài trong số các yếu tố có thể được chứa trong thẻ body.
+
+File HTML:
+File HTML là file văn bản, vì vậy ta có thể sử dụng bất kì trình soạn thảo văn bản nào để tạo trang web đầu tiên của mình.
+
+Thẻ <title>:
+Để đặt tiêu đề trên tab mô tả trang web, ta thêm phần tử <title> vào phần đầu.
+Phân tử tiêu đề rất quan trọng vì nó mô tả trang và được sử dụng bởi các công cụ tìm kiếm.
