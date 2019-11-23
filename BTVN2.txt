@@ -1,0 +1,128 @@
+﻿Đoàn Ngọc Lãm
+tìm hiểu HTML
+Cấu trúc của một tài liệu html
+
+Một tài liệu html gồm 3 phần cơ bản:
+
+	Phần html: Mọi tài liệu html phải bắt đầu bằng thẻ mở html <html> và kết thúc bằng thẻ đóng html </html>
+<html> …. </html>
+
+     Thẻ html báo cho trình duyệt biết nội dung giữa hai thẻ này là một tài liệu html
+
+	Phần tiêu đề: Phần tiêu đề bắt đầu bằng thẻ <head> và kết thúc bởi thẻ </head>. Phần này chứa tiêu đề mà được 
+hiển thị trên thanh điều hướng của trang Web. Tiêu đề nằm trong thẻ title, bắt đầu bằng thẻ <title> và kết thúc là thẻ </title>.
+Tiêu đề là phần khá quan trọng. Khi người dùng tìm kiếm thông tin, tiêu đề của trang Web cung cấp từ khóa chính yếu 
+cho việc tìm kiếm.
+
+	Phần thân: phần này nằm sau phần tiêu đề. Phầ̀n thân bao gồm văn bản, hình ảnh và các liên kết mà bạn muốn 
+hiển thị trên trang web của mình. Phần thân bắt đầu bằng thẻ <body> và kết thúc bằng thẻ </body>
+	ví dụ:
+<html>
+    <head>
+        <title>Welcome to the world of html</title>
+    </head>
+    <body>
+        <P>This is going to be real fun</P>
+    </body>
+</html>
+Thuộc Tính Thẻ
+
+ Là những đặc tính, tính chất mang theo để trình duyệt định dạng và hiển thị thẻ đó.
+ Mỗi thẻ có thể có 1 hoặc nhiều thuộc tính
+ Mỗi thuộc tính có tên thuộc tính và giá trị của thuộc tính, giá trị được đặt trong dấu ""
+ Cú pháp:
+
+<tên_thẻ thuộc_tính_1="giá_trị_thuộc_tính_1" thuộc_tính_2="giá_trị_thuộc_tính_2" ... /> 
+______________________
+
+Nguyễn Yến Nhi
+HTML (HyperText Markup Language)
+
+Không giống như ngôn ngữ lập trình hoặc ngôn ngữ lập trình sử dụng tập lệnh để thực hiện các chức năng, ngôn ngữ đánh dấu sử dụng thẻ để xác định nội dung.
+Ví dụ:
+<p> Happy Birthday Mr. Hong Phuc </p>
+
+Dùng HTML để viết cấu trúc web: Khả năng viết mã bằng HTML là điều cần thiết cho bất kì chuyên gia web nào. Có được kĩ năng này sẽ là điểm khởi đầu cho bất kì ai đang học cách tạo nội dung cho web.
+
+Thẻ <html>:
+Mặc dù trong các năm qua có nhiều phiên bản khác nhau đã được phát hành nhưng những điều cơ bản về HTML vẫn giống nhau.
+Cấu trúc của một tài liệu HTML có thể so sánh với cấu trúc của một chiếc bánh sandwich. Vì một chiếc bánh sandwich có 2 lát bánh mì, tài liệu HTML cũng có các thẻ HTML mở và đóng. Các thẻ này giống như 2 lát bánh mì trong chiếc bánh sandwich, bao quanh mọi thứ khác.
+
+Thẻ <head>:
+Ngay sau thẻ HTML đang mở, ta sẽ tìm thấy phần đầu của tài liệu, được xác định bằng cách mở và đóng thẻ head.
+Phần đầu của tệp HTML chứa tất cả các yếu tố không trực quan giúp trang hoạt động.
+
+Thẻ <body>:
+Tất cả các yếu tố cấu trúc hình ảnh được chứa trong thẻ body.
+Tiêu đề, đoạn văn, danh sách, trích dẫn, hình ảnh và liên kết chỉ là một vài trong số các yếu tố có thể được chứa trong thẻ body.
+
+File HTML:
+File HTML là file văn bản, vì vậy ta có thể sử dụng bất kì trình soạn thảo văn bản nào để tạo trang web đầu tiên của mình.
+
+Thẻ <title>:
+Để đặt tiêu đề trên tab mô tả trang web, ta thêm phần tử <title> vào phần đầu.
+Phân tử tiêu đề rất quan trọng vì nó mô tả trang và được sử dụng bởi các công cụ tìm kiếm.
+
+
+Phạm Nguyễn Minh Thắng
+Tìm hiểu về HTML
+*HTML là gì?
+HTML là chữ viết tắt của cụm từ HyperText Markup Language được sử dụng để tạo một trang web, trên một website có thể sẽ chứa nhiều trang và mỗi trang được quy ra là một tài liệu HTML (thi thoảng mình sẽ ghi là một tập tin HTML). Cha đẻ của HTML là Tim Berners-Lee, cũng là người khai sinh ra World Wide Web và chủ tịch của World Wide Web Consortium (W3C – tổ chức thiết lập ra các chuẩn trên môi trường Internet).
+Một tài liệu HTML được hình thành bởi các phần tử HTML (HTML Elements) được quy định bằng các cặp thẻ (tag), các cặp thẻ này được bao bọc bởi một dấu ngoặc ngọn (ví dụ <html>) và thường là sẽ được khai báo thành một cặp, bao gồm thẻ mở và thẻ đóng (ví <strong> dụ </strong> và ). Các văn bản muốn được đánh dấu bằng HTML sẽ được khai báo bên trong cặp thẻ (ví dụ <strong>Đây là chữ in đậm</strong>). Nhưng một số thẻ đặc biệt lại không có thẻ đóng và dữ liệu được khai báo sẽ nằm trong các thuộc tính (ví dụ như thẻ <img>).
+Một tập tin HTML sẽ bao gồm các phần tử HTML và được lưu lại dưới đuôi mở rộng là .html hoặc .htm.
+*HTML được xử lý ra sao?
+Khi một tập tin HTML được hình thành, việc xử lý nó sẽ do trình duyệt web đảm nhận. Trình duyệt sẽ đóng vai trò đọc hiểu nội dung HTML từ các thẻ bên trong và sẽ chuyển sang dạng văn bản đã được đánh dấu để đọc, nghe hoặc hiểu (do các bot máy tính hiểu).
+*Cấu trúc một đoạn HTML
+HTML sẽ được khai báo bằng các phần tử bởi các từ khóa. Nội dung nằm bên trong cặp từ khóa sẽ là nội dung bạn cần định dạng với HTML. 
+Ngoài ra, trong các thẻ còn có các thuộc tính, thuộc tính sẽ đặt bên trong thẻ mở đầu, mỗi thuộc tính sẽ có giá trị được đặt trong dấu ngoặc kép và cách nhau bởi dấu bằng (=) với tên thuộc tính. 
+Một thẻ có thể sử dụng nhiều thuộc tính chứ không phải chỉ một thuộc tính.
+Dùng chương trình gì để tạo tập tin HTML?
+HTML là một tập tin siêu văn bản nên bạn có thể dùng các chương trình soạn thảo văn bản không có chức năng định dạng văn bản để tạo ra một tập tin HTML. Trong Windows, bạn có thể dùng Notepad để tạo ra một tập tin HTML, còn trên Mac thì có thể dùng TextEdit và Vim trên các hệ điều hành Linux khác. Miễn là sau đó bạn phải lưu tập tin thành đuôi .html và sử dụng trình duyệt website để đọc nó.
+HTML có thể được soạn thảo bởi bất kỳ một trình soạn thảo văn bản đơn giản.
+Tuy nhiên Notepad lại quá đơn giản để sử dụng cho mục đích soạn thảo, nên từ các bài sau chúng ta sẽ dùng một chương trình khác tương tự để soạn thảo HTML. Và không bao giờ khuyến khích sửa một tập tin HTML bất kỳ bằng chương trinh Notepad để tránh gặp các lỗi hiển thị ký tự tiếng Việt.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+								NGÔ DƯƠNG KHA
+	HTML là gì?
+
+HTML (Hypertext Markup Language) là một trong các loại ngôn ngữ được sử dụng trong lập trình web. HTML là ngôn ngữ lập trình web khá cơ bản
+trong lập trình web. Mọi trang web, mọi trình duyệt web đều có thể hiển thị tốt ngôn ngữ HTML. 
+
+	Lịch sử của HTML
+
+HTML được sáng tạo bởi Tim Berners-Lee - nhà vật lý học của trung tâm nghiên cứu CERN ở Thụy Sĩ vào năm 1990. Phiên bản đầu tiên của HTML được
+xuất bản phiên bản đầu tiên vào năm 1991 bao gốm 18 tag HTML.
+
+	Vai trò của HTML trong lập trình web
+
+HTML xoay quanh việc giúp cấu trúc cơ bản trên một website (chia bố cục, khung sườn các thành phần trong website) và góp phần hỗ trợ khai báo
+các tập tin kĩ thuật số như hình anh, video, âm thanh.
+
+	Các tag cơ bản trong HTML
+
+<!DOCTYPE ...>: đây là thẻ khai báo một tài liệu HTML. Thẻ này xác định loại tài liệu và phiên bản HTML.
+<html>: thẻ này chứa đựng các tài liệu HTML đầy đủ. Ở đầu trang sẽ xuất hiện các thẻ <head>, </head> và thân tài liệu là các thẻ <body>, </body>.
+<head>: thẻ này đại diện cho đầu trang tài liệu mà có thể giữ các thẻ như <title>, <link>,...
+<title>: thẻ được sử dụng trong <head> chỉ tiêu đề tài liệu.
+<body>: thẻ này đại diện cho thân tài liệu và giữ các thẻ như <div>, <h1>, <p>,...
+<h1>: thẻ này đại diện cho các tiêu đề trang.
+<p>: thẻ này đại diện cho định dạng các đoạn văn bản.
+
+	Ưu điểm và nhược điểm của HTML
+
+   - Ưu điểm:
++ Ngôn ngử có cộng động sử dụng và tài liệu hỗ trợ rộng lớn.
++ Sử dụng mượt mà trên các trình duyệt.
++ Mã nguồn mở và miễn phí.
++ Markup gọn gàng và đồng nhất.
++ Chuẩn chính của web được vận hành bởi World Wide Wed Consortium (W3C).
++ Dễ dàng tích hợp với các ngôn ngữ backend như PHP và Node.js.
+
+   - Nhược điểm:
++ Được dùng chủ yếu cho web tĩnh. Đối với các tính năng động, bạn cần sử dụng JavaScript hoặc ngôn ngữ backend bên thứ 3 như PHP.
++ Nó có thể thực thi một số logic nhất định cho người dùng. Vì vậy, hầu hết các trang đều cần được tạo riêng biệt, kể cả khi nó sử dụng cùng các
+yếu tố, như là headers hay footers.
++ Một số trình duyệt chậm hỗ trợ tính năng mới.
++ Khó kiểm soát cảnh thực thi của trình duyệt.							
+
+
