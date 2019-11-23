@@ -1,0 +1,46 @@
+							               Ngô Dương Kha
+	CSS là gì?
+
+- CSS là chữ viết tắt của Cascading Style Sheet là một ngôn ngữ định kiểu. CSS dùng để trình bày bố cục của Website dựa vào các thẻ của HTML
+Nói dể hiểu hơn HTML sẽ tạo ra các đoạn văn bản, tiêu đề, bảng,.. thì CSS giúp chúng ta trang trí chúng như thay đổi màu sắc, màu chữ, cấu
+trúc, kích thước,..
+
+	Lịch sử hình thành CSS
+
+- CSS lần đầu tiên được đề xuất bởi Håkon Wium Lie vào ngày 10 tháng 10 năm 1994. Phiên bản đầu tiên được phát hành vào năm 1996.
+
+	Vai trò của CSS
+
+- Hạn chế việc làm rối mã HTML của trang web bằng các thẻ định dạng giúp mã nguồn web được gọn gàng hơn, công việc sửa chữa cập nhật dễ dàng
+hơn.
+- Tạo ra kiểu dàng có thể áp dụng cho nhiều trang web, tránh phải định dạng lại trang web giống nhau.
+
+	Cấu trúc của một đoạn CSS
+
+Vùng chọn {
+   thuộc tính 1: giá trị của thuộc tính 1;
+   thuộc tính 2: giá trị của thuộc tính 2;
+   ...
+   thuộc tính n: giá trị của thuộc tính n;
+}
+
+   + Vùng chọn (selector): tên phần tử bắt đầu cú pháp. Nó chọn (các) thẻ trong HTML mà chúng ta tác động vào.
+   + Thuộc tính (properties): khai báo thuộc tính muốn tạo cho đối tượng đã chọn.
+   + Giá trị của thuộc tính (Value): giá trị của thuộc tính.
+
+	Viết CSS ở đâu?
+
+- Có ba cách viết CSS đó là:
+
+   + Inline: viết trực tiếp trên thẻ thông qua thuộc tính style.
+   + Internal: viết lại file HTML hiện tại và nằm trong thẻ style.
+   + External: viết riêng một thẻ có phần đuôi .css rồi sau đó import vào bằng thẻ HTML.
+
+ ==> Tuy nhiên, cách viết inline rất dễ rối, khó quản lý và không tốt cho SEO nên không nên sử dụng. Tiếp theo cách viết internal có thể chập nhận
+nhưng dạng này cũng không tốt cho SEO. Vậy cách viết External là tối ưu nhất, code sẽ gọn gàng, dễ quản lý, cập nhật và tốt cho SEO. Nếu viết theo
+internal hoặc external khi import vào thẻ link thì nên đặt vào thẻ <head>.
+
+(SEO chính là tối ưu hóa công cụ tìm kiếm, một website đáp ứng được nhiều các tiêu chuẩn của máy tìm kiếm thì càng được đánh giá tốt và cơ hội lên
+TOP tìm kiếm sẽ cao hơn)
+
+	
