@@ -123,6 +123,7 @@ các tập tin kĩ thuật số như hình anh, video, âm thanh.
 + Nó có thể thực thi một số logic nhất định cho người dùng. Vì vậy, hầu hết các trang đều cần được tạo riêng biệt, kể cả khi nó sử dụng cùng các
 yếu tố, như là headers hay footers.
 + Một số trình duyệt chậm hỗ trợ tính năng mới.
-+ Khó kiểm soát cảnh thực thi của trình duyệt.							
++ Khó kiểm soát cảnh thực thi của trình duyệt.														
+
 
 

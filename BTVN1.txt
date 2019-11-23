@@ -1,5 +1,4 @@
-
------------------------------------------------------------------------------------------------------------------------------
+﻿-----------------------------------------------------------------------------------------------------------------------------
 
  							Đỗ Văn Bảo
 
@@ -152,6 +151,7 @@ Controller : Giữ nhiệm vụ nhận điều hướng các yêu cầu từ ng�
       - Ngoài việc phân chia thành ba thành phần riêng biệt, MVC còn là sự tương tác giữa các thành phần
 
    + Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
+   
    + View là hiện thị của model theo một định dạng xác định
    + Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt
    input có 
@@ -174,3 +174,108 @@ nhóm lại với nhau.
 sự độc lập thông qua những mảng đã được cấu trúc sẵn dẫn đến việc không tăng lợi nhuận trong MVC.
 3. Dựa trên những biểu đồ học tập - việc yêu cầu phải có kiến thức trong nhiều công ngh trở thành việc hiển nhiên. Những nhà phát triển sử
 dụng MVC cần phải thành thạo trong nhiều công nghệ.
+------------------------------------------------------------------------------------------------------------------------------
+                                                       Vũ Phương Thoa
+
+
+      
+
+   Model – View – Controller (thường được gọi là MVC) là một mô hình thiết kế phần mềm  thường được sử dụng để phát triển giao diện người
+   dùng, phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. Theo mô hình MVC tách rời các thành phần chính này
+   cho phép tái sử dụng code và phát triển song song
+	
+     
+
+   + Model (mô hình): Đây là thành phần trung tâm của mô hình, chứa tất cả các nghiệp vụ logic, phương thức xử lý, truy xuất database, đối
+   tượng mô tả dữ liệu class, hàm,… Trực tiếp quản lý dữ liệu, logic và quy tắc của ứng dụng.
+   . View (khung nhìn): Đây là thành phần đại diện cho thông tin như biểu đồ, đồ thị, sơ đồ, bảng, văn bản, hình ảnh,… có thể hiển thị
+   nhiều chế độ xem của cùng một thông tin. Đảm bảo nhiệm vụ hiển thị dữ liệu, giúp người dùng tương tác với hệ thống.
+   + Controller (bộ điều khiển): Nhận vào input và chuyển đổi thành các lệnh cho model hoặc view.
+
+      
+
+   . Model chịu trách nhiệm quản lý dữ liệu của ứng dụng, nó nhận input của người dùng từ controller
+   . View là hiện thị của model theo một định dạng xác định
+   . Controller phản hồi lại input của người dùng và thực hiện các tương tác trên đối tượng của mô hình dữ liệu. Controller nhận, duyệt
+   input có 
+   chọn lọc và sau đó truyền (input vào model).
+  -------------------------------------------------------------------------------------------------------------------------------------
+						Phạm Nguyễn Minh Thắng
+						
+						
+-Mô hình MVC là gì?
+  +MVC là từ viết tắt của 'Model View Controller'. Nó đại diện cho các nhà phát triển kiến ​​trúc áp dụng khi xây dựng các ứng dụng. Với kiến ​​trúc MVC, chúng ta xem xét cấu trúc ứng dụng liên quan đến cách luồng dữ liệu của ứng dụng của chúng ta hoạt động như thế nào.
+-Các thành phần trong mô hình MVC
+ Mô hình MVC được chia làm 3 lớp xử lý gồm Model – View – Controller :
+  +Model : là nơi chứa những nghiệp vụ tương tác với dữ liệu hoặc hệ quản trị cơ sở dữ liệu (mysql, mssql… ); nó sẽ bao gồm các class/function xử lý nhiều nghiệp vụ như kết nối database, truy vấn dữ liệu, thêm – xóa – sửa dữ liệu…
+  +View : là nới chứa những giao diện như một nút bấm, khung nhập, menu, hình ảnh… nó đảm nhiệm nhiệm vụ hiển thị dữ liệu và giúp người dùng tương tác với hệ thống.
+  +Controller : là nới tiếp nhận những yêu cầu xử lý được gửi từ người dùng, nó sẽ gồm những class/ function xử lý nhiều nghiệp vụ logic giúp lấy đúng dữ liệu thông tin cần thiết nhờ các nghiệp vụ lớp Model cung cấp và hiển thị dữ liệu đó ra cho người dùng nhờ lớp View.
+-Sự tương tác giữa các thành phần
+  +Controller tương tác với qua lại với View
+  +Controller tương tác qua lại với Model
+  +Model và View không có sự tương tác với nhau mà nó tương tác với nhau thông qua Controller.
+-Kịch bản mô hình hoạt động theo mô hình MVC
+  +Kịch bản 1: Người dùng chỉ gửi yêu cầu chuyển từ trang hiện tại sang một trang khác của web không có yêu cầu về dữ liệu.
+    Nếu như người lập trình thực hiện việc redirect ở Controller thì lúc này luồng hoạt động là: 1 -> 3 -> 11. Request được gửi từ Browser (trình duyệt) đến Route (nơi định tuyến hay phân định các request sẽ được xử lý ở đâu là trực tiếp tại Route hay là tại Controller nào đó).
+    Nếu người lập trình để việc redirect trang ở trực tiếp tại Route thì luồng hoạt động của nó là: 1 -> 2 yêu cầu chuyển trang sẽ được xử lý ngay tại Route mà không cần gọi đến Controller.
+  +Kịch bản 2: Người dùng gửi 1 request redirect về 1 trang khác của web có trả về dữ liệu (ví dụ như xem danh sách các Tour đã đặt).
+    Luồng hoạt động của nó là: 1 -> 3 -> 4 -> 6 -> 7 -> 8 -> 10 -> 9 > 11. Sau khi request gửi về Route được Route chuyển về xử lý tại Controller, lúc này các yêu cầu liên quan đến dữ liệu sẽ được xử lý và Controller sẽ có sự tương tác với Model để lấy dữ liệu, Controller sẽ sử dụng các lớp/hàm trong Model cần thiết để lấy ra những dữ liệu chính xác. Model tương tác với Database để lấy dữ liệu, dữ liệu trả về được gửi về Model từ Model gửi lại về Controller, Controller gọi đến View phù hợp với request kèm theo dữ liệu cho View, View sẽ lắp dữ liệu tương ứng vào HTML và gửi lại một HTML cho Controller sau khi thực hiện xong nhiệm vụ của mình. Hoàn tất các công đoạn trên Controller sẽ trả kết quả về Browser.
+  +Kịch bản 3: Người dùng chỉ yêu cầu dữ liệu nhưng không chuyển trang
+    Luồng hoạt động của nó là: 1 -> 3 -> 4 -> 6 -> 7 -> 8 -> 11. Thứ tự xử lý tương tự ở kịch bản 2 nhưng đến khi Controller nhận được dữ liệu trả về thì không gọi đến View mà trả respone lại cho trình duyệt thông qua API, dữ liệu trả về thường sẽ là dạng JSON.
+-Ưu điểm MVC
+  +Trình tự xử lý rất rõ ràng
+  +Mô hình MVC quy hoạch các class/function vào các thành phần riêng biêt Controller - Model - View, việc đó làm     cho quá trình phát triển - quản lý - vận hành - bảo trì web diễn ra thuận lợi hơn, tạo ra được các chức năng chuyên biệt hoá đồng thời kiểm soát được luồng xử lý.
+  +Tạo mô hình chuẩn cho dự án, khi người có chuyên môn ngoài dự án tiếp cận với dự án dễ dàng hơn.
+     Mô hình đơn giản, dễ hiểu, xử lý những nghiệp vụ đơn giản, và dễ dàng triển khai với các dự án nhỏ.
+-Nhược điểm mô hình MVC
+  +Đối với các dự án có tính phức tạp cao thì mô hình MVC trở nên không khả dụng.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+							Võ Đức Trung Hiếu					
+							...Kiến trúc phần mềm 3 lớp...
+3-tiers là một kiến trúc kiểu client/server mà trong đó giao diện người dùng (UI-user interface), các quy tắc xử lý (BR-business rule hay BL-business logic), và việc lưu trữ dữ liệu được phát triển như những module độc lập, và hầu hết là được duy trì trên các nền tảng độc lập, và mô hình 3 tầng (3-tiers) được coi là một kiến trúc phần mềm và là một mẫu thiết kế.” (dịch lại từ wikipedia tiếng Anh).
+	Đây là kiến trúc triển khai ứng dụng ở mức vật lý .Kiến trúc gồm 3 module chính và riêng biệt :
+_ Tầng Presentation: hiển thị các thành phần giao diện để tương tác với người dùng như tiếp nhận thông tin, thông báo lỗi, …
+_ Tầng Business Logic: thực hiện các hành động nghiệp vụ của phần mềm như tính toán, đánh giá tính hợp lệ của thông tin, … Tầng này còn di chuyển, xử lí thông tin giữa 2 tầng trên dưới.
+_ Tầng Data: nơi lưu trữ và trích xuất dữ liệu từ các hệ quản trị CSDL hay các file trong hệ thống. Cho phép tầng Business logic thực hiện các truy vấn dữ liệu .
+Mọi người vẫn hay nhầm lẫn giữa tier và layer vì cấu trúc phân chia giống nhau (presentation, bussiness , data). Tuy nhiên, thực tế chúng hoàn toàn khác nhau. Nếu 3 tiers có tính vật lí thì 3 layer có tính logic. Nghĩa là ta phân chia ứng dụng thành các phần (các lớp) theo chức năng hoặc vai trò một cách logic. Các layer khác nhau được thực thi trong 1 phân vùng bộ nhớ của process. Vì thế nên một tier có thể có nhiều layer.
+
+	Mô hình 3-layer gồm có 3 phần chính :
+
+– Presentation Layer (GUI) : Lớp này có nhiệm vụ chính giao tiếp với người dùng. Nó gồm các thành phần giao diện ( win form, web form,…) và thực hiện các công việc như nhập liệu, hiển thị dữ liêu, kiểm tra tính đúng đắn dữ liệu trước khi gọi lớp Business Logic Layer (BLL).
+
+– Business Logic Layer (BLL) : Layer này phân ra 2 thành nhiệm vụ :
+
+Đây là nơi đáp ứng các yêu cầu thao tác dữ liệu của GUI layer, xử lý chính nguồn dữ liệu từ Presentation Layer trước khi truyền xuống Data Access Layer và lưu xuống hệ quản trị CSDL.
+Đây còn là nơi kiểm tra các ràng buộc, tính toàn vẹn và hợp lệ dữ liệu, thực hiện tính toán và xử lý các yêu cầu nghiệp vụ, trước khi trả kết quả về Presentation Layer.
+– Data Access Layer (DAL) : Lớp này có chức năng giao tiếp với hệ quản trị CSDL như thực hiện các công việc liên quan đến lưu trữ và truy vấn dữ liệu ( tìm kiếm, thêm, xóa, sửa,…).
+
+	Ưu điểm:
+Việc phân chia thành từng lớp giúp cho code được tường minh hơn. Nhờ vào việc chia ra từng lớp đảm nhận các chức năng khác nhau và riêng biệt như giao diện, xử lý, truy vấn thay vì để tất cả lại một chỗ. Nhằm giảm sự kết dính.
+Dễ bảo trì khi được phân chia, thì một thành phần của hệ thống sẽ dễ thay đổi. Việc thay đổi này có thể được cô lập trong 1 lớp, hoặc ảnh hưởng đến lớp gần nhất mà không ảnh hưởng đến cả chương trình.
+Dễ phát triển, tái sử dụng: khi chúng ta muốn thêm một chức năng nào đó thì việc lập trình theo một mô hình sẽ dễ dàng hơn vì chúng ta đã có chuẩn để tuân theo. Và việc sử dụng lại  khi có sự thay đổi giữa hai môi trường ( Winform sang Webfrom ) thì chỉ việc thay đổi lại lớp GUI.
+Dễ bàn giao. Nếu mọi người đều theo một quy chuẩn đã được định sẵn, thì công việc bàn giao, tương tác với nhau sẽ dễ dàng hơn và tiết kiệm được nhiều thời gian.
+Dễ phân phối khối lượng công việc. Mỗi một nhóm, một bộ phận sẽ nhận một nhiệm vụ trong mô hình 3 lớp. Việc phân chia rõ ràng như thế sẽ giúp các lập trình viên kiểm soát được khối lượng công việc của mình.
+
+-----------------------------------------------------------------------------------------------------------------------------
+						Huỳnh Quang Trung
+
+- Model – View – Controller (MVC) là một mô hình thiết kế phần mềm, phân chia logic chương trình liên quan thành ba phần tử được kết nối với nhau. 
+
+- MVC bao gồm:
+	+ Model: chứa các phương thức xử lý, truy xuất database, đối tượng mô tả dữ liệu như các Class, hàm xử lý...
+	+ View: đảm nhận hiển thị thông tin, tương tác với người dùng.
+	+ Controller: xử lý và điều hướng các hành động của người dùng, từ đó đưa ra các xử lý với database nếu có.
+	
+- Cách thức hoạt động:
+	+ User tương tác với View, bằng cách click vào button, user gửi yêu cầu đi.
+	+ Controller nhận và điều hướng chúng đến đúng phương thức xử lý ở Model.
+	+ Model nhận thông tin và thực thi các yêu cầu.
+	+ Khi Model hoàn tất việc xử lý, View sẽ nhận kết quả từ Model và hiển thị lại cho người dùng.
+	
+- Ưu điểm:
+	+ Chuyên nghiệp, dễ phân tích thiết kế.
+	+ Phát triển ứng dụng nhanh, đơn giản, dễ nâng cấp, bảo trì.
+
+- Nhược điểm:
+	+ Cồng kềnh, tốn thời gian trong quá trình phát triển. 
+	+ Tốn thời gian trung chuyển dữ liệu của các thành phần.
