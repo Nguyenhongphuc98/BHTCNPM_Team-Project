@@ -123,7 +123,71 @@ các tập tin kĩ thuật số như hình anh, video, âm thanh.
 + Nó có thể thực thi một số logic nhất định cho người dùng. Vì vậy, hầu hết các trang đều cần được tạo riêng biệt, kể cả khi nó sử dụng cùng các
 yếu tố, như là headers hay footers.
 + Một số trình duyệt chậm hỗ trợ tính năng mới.
-+ Khó kiểm soát cảnh thực thi của trình duyệt.														
++ Khó kiểm soát cảnh thực thi của trình duyệt.			
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+									Đỗ Văn Bảo
+								Tìm hiểu về các thẻ trong HTLM
+I,Một tài liệu HTML được tạo nên từ các cặp thẻ html
+
+-Thẻ được bắt đầu bằng dấu < và kết thúc bằng dấu >
+-Tên thẻ nằm giữa cặp dấu <>
+
+II, Phân loại : HTML tags có 2 loại chính: block-level và inline tags.
+1.Elements Block-level sẽ sử dụng toàn không gian trang web và luôn bắt đầu dòng mới của trang web. Headings và paragraph là những ví dụ chính của block tags.
+  3 block level tags của mỗi trang HTML cần có những tag như là <html>, <head>, và <body>.
+
+	Tag <html></html> là element cao nhất dùng để đóng gói mỗi trang HTML.
+	Tag <head></head> chứa các thông tin meta như là tiêu đề trang và charset.
+	Cuối cùng, <body></body> tag dùng để đóng gói tất cả nội dung sẽ hiện trên trang.
+2.Inline elements chỉ chiếm phần nhỏ không gian web và không bắt đầu dòng mới của trang web. 
+  Chúng thường dùng để định dạng nội dung bên trong của block level elements. Links và những tag nhấn mạnh là những tag inlines phổ biến.
+
+III, Một số thẻ cơ bản 
+a) Các thẻ tiêu đề : Bao gồm các thẻ từ <h1> đến <h6>
+-Sử dụng để thế hiện cho tiêu đề của bài viết, bản tin hay các mục nhấn mạnh
+b) Đoạn văn bản trong HTLM: Nội dung văn bản được thể hiện trong cặp thẻ <p></p>
+-Ví dụ :		<p> Hello, every body !</p>
+			<p> My name is Bao. Nice to meet you.</p>
+c) Liên kết : Ta dùng cặp thẻ <a></a> để làm công việc liên kết các trang web với nhau
+-Đặc biệt thẻ này có các thuộc tính như sau : 
+	href: qui định địa chỉ mà url trỏ tới
+	target: qui định liên kết sẽ được mở ra ở đâu
+-Ví dụ :		<a href="https://google.com.vn" target="_blank">Go to google page</a>
+d) Xuống dòng : Ta dùng thẻ <br /> để xuống dòng trong một đoạn văn bản
+-Ví dụ : 		<p>Break line <br />in <br />paragraph</p>
+e) Đường kẻ ngang : Ta dùng thẻ <hr /> để tạo một đường kẻ ngang trong trang HTML
+f) Hình ảnh : Ta dùng thẻ <img> để chèn ảnh vào trang web
+-Thẻ này cũng có thuộc tính như sau :
+	src: chỉ ra đường dẫn file ảnh
+	alt: để mô tả nội dung sẽ hiển thị khi đường dẫn tới file ảnh không tồn tại
+	title=”Tiêu đề”: nội dung hiển thị khi đưa trỏ chuột lên hình.
+	width, height: độ rộng và độ cao của file được tính bằng excel, nếu không có width và height thì mặc định sẽ lấy kích thước gốc của file
+-ví dụ : 		<img src="Exist.jpg" alt=”image ton tai” title=”hello” width="300px" height="150px" />
+g) Các thẻ định dạng :
+<b> (bold): Chữ In đậm
+
+<u> (Underline): Chữ gạch chân
+
+<i> (italic): Chữ in nghiêng
+
+<big> (Big): Chữ lớn hơn
+
+<sub> (Subscrip) Chỉ số dưới, ví dụ: H2O
+
+<sup> (Superscript): Chỉ số trên, ví dụ: x2y
+
+<strong> In đậm (nhấn mạnh <b>)
+
+<em>(emphasized): Chữ in nghiêng, Nhấn mạnh hơn <i>
+h) thẻ hiện thị danh sách 
+   +<ol></ol> cho danh sách theo thứ tự 
+   +<ul></ul> cho danh sách không theo thứ tự
+	Danh sách cần được được đặt trong tag <li></li>
+-Ví dụ 			<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			</ul>											
 
 
 
