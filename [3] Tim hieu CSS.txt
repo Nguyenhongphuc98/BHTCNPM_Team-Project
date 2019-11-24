@@ -42,5 +42,46 @@ internal hoặc external khi import vào thẻ link thì nên đặt vào thẻ 
 
 (SEO chính là tối ưu hóa công cụ tìm kiếm, một website đáp ứng được nhiều các tiêu chuẩn của máy tìm kiếm thì càng được đánh giá tốt và cơ hội lên
 TOP tìm kiếm sẽ cao hơn)
+============================================================================================================================================================
+								Đỗ Văn Bảo
+						Cách sử dụng CSS để định dạng cho 1 trang Web
+Cách 1:Inline CSS -Viết trực tiếp vào thẻ HTML
++Ví dụ :		<p style = "color : red " > My name is Bao! </p>
+	Tác dụng: Khi chúng ta cần định nghĩa cho 1 vài thẻ riêng lẻ trong HTML
+Cách 2: Internal CSS-Định nghĩa style cùng với trang HTML
++Ví dụ :
+			<style> 
+				h1{
+					color : #16A5E8;
+				}
+				#main{
+					width: 300px;
+					height: 450px;
+					text-align: center;
+				}
+			</style>
+	Tác dụng: Khi cần xây dựng style cho từng trang riêng lẻ .
+Cách 3: External CSS-Viết style ra một trang riêng 
+Theo cách này bạn viết Style ra một trang riêng và lưu dưới file .css
+Ví dụ :
+			html {
+  				background-color: #E89416;
+			}
+			body {
+  				width: 1000px;
+  				margin: 0 auto;
+  				background-color: #16A5E8;
+  				padding: 0 20px 20px 20px;
+  				border: 5px solid black;
+			}
+Sau đó chúng ta khai báo sử dụng CSS trong phần head của file html như sau :
+			<link rel="stylesheet" href="assets/css/main.css" />
+** Độ ưu tiên sử dụng :
+Inline -> Internal-> External 
+** Thứ tự ưu tiên trong 1 bộ định dạng : 
+Trong một bộ định dạng của một phần tử, nếu một thuộc tính nào đó bị viết lập lại nhiều lần, thì thuộc tính đó sẽ nhận giá trị ở lần viết cuối cùng.
+**Lưu ý : Khi bạn muốn vô hiệu hóa một số mã CSS với mục đích nào đó (chẳng hạn như để ghi nhớ, chú thích, hoặc test code) thì bạn đặt chúng vào bên trong cặp dấu /* */
+						
+
 
 	
