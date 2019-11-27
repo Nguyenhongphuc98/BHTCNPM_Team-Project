@@ -81,6 +81,43 @@ Inline -> Internal-> External
 ** Thứ tự ưu tiên trong 1 bộ định dạng : 
 Trong một bộ định dạng của một phần tử, nếu một thuộc tính nào đó bị viết lập lại nhiều lần, thì thuộc tính đó sẽ nhận giá trị ở lần viết cuối cùng.
 **Lưu ý : Khi bạn muốn vô hiệu hóa một số mã CSS với mục đích nào đó (chẳng hạn như để ghi nhớ, chú thích, hoặc test code) thì bạn đặt chúng vào bên trong cặp dấu /* */
+
+===========================================================================================================================================
+							Huỳnh Quang Trung - 19520317
+
+	CSS là gì?
+- CSS là viết tắt của Cascading Style Sheets, dùng để định dạng, "trang trí" trang web, nếu xem HTML là những viên gạch thì CSS là sơn, là "decoration".
+
+	Cấu trúc đoạn CSS:
+vùng chọn {
+	thuộc tính: giá trị;
+	thuộc tính: giá trị;
+	...
+}
+
+	Các cách nhúng CSS vào web:
+- Inline: nhúng trực tiếp vào file HTML thông qua cặp thẻ <style> </style>.
+.ví dụ: 
+	<style>
+	  p { 
+	    color: yellow;
+	    font-family: Arial;
+	  }
+	</style>
+
+- External: tạo một file .css, viết file đó và chèn vào file HTML bằng thẻ <link> đặt trong cặp thẻ <head>.
+.ví dụ:
+(CSS):	p {
+	color: red;
+	font-family: Arial;
+	}
+(HTML): <link rel="stylesheet" href="test.css" />
+
+	* Note:
+- Inline styles thích hợp với đoạn CSS ngắn, trình duyệt không mất thời gian tải file CSS.
+- External styles thích hợp chèn nhiều đoạn CSS, trình duyệt mất thời gian tải file CSS.
+
+
 						
 
 
