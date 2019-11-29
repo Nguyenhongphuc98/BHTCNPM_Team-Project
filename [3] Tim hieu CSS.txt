@@ -1,4 +1,4 @@
-							               Ngô Dương Kha
+﻿							               Ngô Dương Kha
 	CSS là gì?
 
 - CSS là chữ viết tắt của Cascading Style Sheet là một ngôn ngữ định kiểu. CSS dùng để trình bày bố cục của Website dựa vào các thẻ của HTML
@@ -116,6 +116,25 @@ vùng chọn {
 	* Note:
 - Inline styles thích hợp với đoạn CSS ngắn, trình duyệt không mất thời gian tải file CSS.
 - External styles thích hợp chèn nhiều đoạn CSS, trình duyệt mất thời gian tải file CSS.
+------------------------------------------------------------------------------------------------------------
+Phạm Nguyễn Minh Thắng
+
+1. Tác dụng của CSS
+	-Hạn chế tối thiểu việc làm rối mã HTML của trang Web bằng các thẻ quy định kiểu dáng (chữ đậm, chữ in nghiêng, chữ có gạch chân, chữ màu), khiến mã nguồn của trang Web được gọn gàng hơn, tách nội dung của trang Web và định dạng hiển thị, dễ dàng cho việc cập nhật nội dung.
+    	-Tạo ra các kiểu dáng có thể áp dụng cho nhiều trang Web, giúp tránh phải lặp lại việc định dạng cho các trang Web giống nhau.
+2. Sử dụng CSS
+ Có 3 cách sử dụng:
+   	- "Inline CSS": Áp dụng trực tiếp trên một đối tượng nhất định bằng thuộc tính style:
+ <span style="font-weight:bold; text-decoration:underline; color:#FF0000;">Đoạn text cần in đậm, gạch chân, màu đỏ</span>
+	-"Internal CSS": Đặt CSS ở đầu trang Web để áp dụng kiểu dáng cho toàn bộ trang ấy, khi đó chỉ cần đặt đoạn CSS vào trong cặp thẻ <style> rồi đặt vào trong phần header của Web (giữa <head> và </head>):
+<style type="text/css">
+body {font-family:verdana; color:#0000FF;} /* Kiểu chữ trong trang Web là "Verdana", màu chữ thông thường là màu xanh dương */
+</style>
+    	-"External CSS": Đặt các thuộc tính CSS vào một tệp tin riêng biệt (*.css), khi đó có thể tham chiếu đến từ nhiều trang Web khác nhau:
+ Ví dụ về nội dung tệp style.css:
+ body {font-family:verdana; color:#0000FF;}
+Tham chiếu tới tệp tin CSS trên từ trang Web bằng đoạn mã (mã có thể nằm ngoài thẻ <head>):
+ <link rel="stylesheet" type="text/css" href="style.css"/>
 
 
 						
